@@ -379,6 +379,7 @@ h3 {
 }
 
 .book_now {
+  width: 284px!important;
   display: inline-block;
   font-size: 14px;
   color: #009DFF;
@@ -565,7 +566,7 @@ h3 {
   }
 }
 .header-area .main-header-area {
-  padding: 0 150px;
+  /* padding: 0 150px; */
 }
 @media (max-width: 767px) {
   .header-area .main-header-area {
@@ -584,7 +585,7 @@ h3 {
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
   .header-area .main-header-area {
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 }
 .header-area .main-header-area .logo-img {
@@ -783,8 +784,8 @@ h3 {
   padding-left: 0;
 }
 .header-area .main-header-area.sticky {
-  transition: transform 500ms ease, background 500ms ease;
-  -webkit-transition: transform 500ms ease, background 500ms ease;
+  transition: transform 1500ms ease, background 1500ms ease;
+  -webkit-transition: transform 1500ms ease, background 1500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
   padding: 10px 150px;
   background: #000;
@@ -1405,6 +1406,24 @@ h3 {
     padding-top: 80px;
   }
 }
+
+.redirect_area {
+  display: flex;
+  justify-content: center;
+}
+
+.redirect_component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redirect_parent {
+  min-width: 380px;
+  margin-bottom: 30px
+}
+
 @media (max-width: 767px) {
   .offers_area .single_offers {
     margin-bottom: 30px;

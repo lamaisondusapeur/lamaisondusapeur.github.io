@@ -39,13 +39,14 @@ if(menu.length){
 $('.slider_active').owlCarousel({
   loop:true,
   margin:0,
-items:1,
-autoplay:true,
-navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+  items:1,
+  autoplay:true,
+  navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
   nav:true,
-dots:false,
-autoplayHoverPause: true,
-autoplaySpeed: 1600,
+  dots:false,
+  autoplayHoverPause: true,
+  autoplaySpeed: 1600,
+  navSpeed: 1000,
   responsive:{
       0:{
           items:1,
