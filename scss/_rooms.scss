@@ -1,0 +1,164 @@
+.rooms_area{
+  padding-top: 200px;
+  padding-bottom: 100px;
+  @media #{$mobile_device} {
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+  @media #{$tablet_device} {
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+  @media #{$mid_device} {
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+  .rooms_info{
+      li {
+          margin-bottom: 8px
+      }
+      p{
+          font-size: 16px;
+          line-height: 28px;
+          font-size: 16px;
+          line-height: 28px;
+          margin-top: 0;
+          margin-bottom: 47px;
+      }
+      a{
+          @media #{$mobile_device} {
+              margin-bottom: 30px;
+          }
+      }
+  }
+  .rooms_thumb{
+      @include justify-content(flex-end);
+      @media #{$tablet_device} {
+          // display: block !important;
+          @include justify-content(flex-start);
+          margin-top: 30px;
+      }
+      img{
+          width: 100%;
+      }
+      .img_1{
+          // <!-- 284x400 -->
+          background-image: url(../img/rooms/sauna.jpg);
+          width: 284px;
+          height: 400px;
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+      .img_2{
+          background-image: url(../img/rooms/kitchen.jpg);
+          width: 284px;
+          height: 400px;
+          margin-top: 40px;
+          margin-left: 10px;
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+  }
+  .rooms_thumb2{
+      // @include justify-content(flex-end);
+      @media #{$tablet_device}{
+          margin-bottom: 30px;
+      }
+      img{
+          width: 100%;
+      }
+      .img_2{
+          margin-top: 40px;
+          margin-left: 10px;
+      }
+  }
+}
+
+// rooms_info_area.
+.rooms_bg_1{
+  background-image: url(../img/banner/rooms_banner.png);
+}
+.rooms_info_area{
+  padding-left: 387px;
+  margin-top: 50px;
+  @media #{$tablet_device} {
+      padding-left: 0px;
+  }
+  @media #{$mobile_device} {
+      padding-left: 0px;
+  }
+  @media #{$mid_device} {
+      padding-left: 0px;
+  }
+  @media #{$large_device} {
+      padding-left: 0px;
+  }
+  .single_slider{
+      height: 750px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      @media #{$mobile_device} {
+          height: 400px;
+      }
+      @media #{$tablet_device} {
+          height: 400px;
+      }
+      @media #{$mid_device} {
+          height: 500px;
+      }
+  }
+}
+.rooms_main_info{
+  padding-top: 100px;
+  @media #{$mobile_device} {
+      padding-top: 50px;
+  }
+  .single_rooms_info{
+      margin-bottom: 43px;
+      @media #{$mobile_device} {
+          margin-bottom: 30px;
+      }
+      h3{
+          font-size: 22px;
+          color: #1F1F1F;
+          margin-bottom: 0;
+          margin-bottom: 10px;
+          line-height: 32px;
+      }
+      p{
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: 400;
+          color: #4D4D4D;
+          br{
+              @media #{$mobile_device} {
+                 display: none;
+              }
+              @media #{$tablet_device} {
+                 display: none;
+              }
+              @media #{$mid_device} {
+                 display: none;
+              }
+              @media #{$large_device} {
+                 display: none;
+              }
+          }
+      }
+  }
+}
+
+.rooms_detail_img {
+    width: 290px;
+    height: 280px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+
+.rooms_fourre_tout {
+    width: 200px;
+    height: 200px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
