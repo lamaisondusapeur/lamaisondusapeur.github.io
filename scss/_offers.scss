@@ -16,6 +16,9 @@
         }
       }
       .single_offers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @media #{$mobile_device} {
           margin-bottom: 30px;
         }

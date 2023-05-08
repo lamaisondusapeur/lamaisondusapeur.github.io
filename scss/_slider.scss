@@ -3,12 +3,15 @@
 }
 .slider_bg_2{
     background-image: url(../img/banner/banner2.jpg);
+    @media #{$mobile_device} {
+        background-position-x: 50%;
+     }
 }
 .slider_bg_3{
     background-image: url(../img/banner/banner3.jpeg);
-}
-.slider_bg_4{
-    background-image: url(../img/banner/banner4.jpeg);
+    @media #{$mobile_device} {
+        background-position-x: 20%;
+     }
 }
 .slider_area{
     .single_slider{

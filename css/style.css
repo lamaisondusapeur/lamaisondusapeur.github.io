@@ -379,7 +379,6 @@ h3 {
 }
 
 .book_now {
-  width: 284px!important;
   display: inline-block;
   font-size: 14px;
   color: #009DFF;
@@ -566,7 +565,7 @@ h3 {
   }
 }
 .header-area .main-header-area {
-  /* padding: 0 150px; */
+  padding: 0 150px;
 }
 @media (max-width: 767px) {
   .header-area .main-header-area {
@@ -585,7 +584,7 @@ h3 {
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
   .header-area .main-header-area {
-    /* padding: 0 10px; */
+    padding: 0 10px;
   }
 }
 .header-area .main-header-area .logo-img {
@@ -784,8 +783,8 @@ h3 {
   padding-left: 0;
 }
 .header-area .main-header-area.sticky {
-  transition: transform 1500ms ease, background 1500ms ease;
-  -webkit-transition: transform 1500ms ease, background 1500ms ease;
+  transition: transform 500ms ease, background 500ms ease;
+  -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
   padding: 10px 150px;
   background: #000;
@@ -821,13 +820,19 @@ h3 {
 .slider_bg_2 {
   background-image: url(../img/banner/banner2.jpg);
 }
+@media (max-width: 767px) {
+  .slider_bg_2 {
+    background-position-x: 50%;
+  }
+}
 
 .slider_bg_3 {
   background-image: url(../img/banner/banner3.jpeg);
 }
-
-.slider_bg_4 {
-  background-image: url(../img/banner/banner4.jpeg);
+@media (max-width: 767px) {
+  .slider_bg_3 {
+    background-position-x: 20%;
+  }
 }
 
 .slider_area .single_slider {
@@ -886,15 +891,25 @@ h3 {
   padding: 0 !important;
 }
 
-.village_list_title {
+.village_list_title, .eat_list_title, .activity_list_title {
   margin-bottom: 8px;
   font-weight: bold;
 }
+.village_list_title a, .eat_list_title a, .activity_list_title a {
+  color: #009DFF;
+}
 
-.village_list, .activity_list {
+.village_list, .activity_list, .eat_list {
   padding-left: 8px;
 }
-.village_list li, .activity_list li {
+.village_list ul, .activity_list ul, .eat_list ul {
+  padding-left: 23px;
+}
+.village_list ul li, .activity_list ul li, .eat_list ul li {
+  line-height: 24px;
+  font-size: 14px;
+}
+.village_list li, .activity_list li, .eat_list li {
   font-size: 16px;
   color: #4D4D4D;
   line-height: 28px;
@@ -902,7 +917,7 @@ h3 {
   z-index: 9;
   padding-left: 23px;
 }
-.village_list li::before, .activity_list li::before {
+.village_list li::before, .activity_list li::before, .eat_list li::before {
   position: absolute;
   content: "";
   width: 8px;
@@ -1029,6 +1044,42 @@ h3 {
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -260px;
+}
+.about_area .about_thumb .eat-img {
+  background-image: url(../img/eat/eat4.jpg);
+  width: 284px;
+  height: 400px;
+  margin-top: 40px;
+  margin-right: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about_area .about_thumb .eat2-img {
+  background-image: url(../img/eat/eat3.jpg);
+  width: 284px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -150px;
+}
+.about_area .about_thumb .eat3-img {
+  background-image: url(../img/eat/eat5.jpg);
+  width: 284px;
+  height: 400px;
+  background-position: -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about_area .about_thumb .eat4-img {
+  background-image: url(../img/eat/eat6.jpg);
+  width: 284px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -200px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .about_area .about_thumb2 {
@@ -1077,6 +1128,10 @@ h3 {
 }
 .surrounding-img .walk-img {
   background-image: url(../img/walk/walk1.jpeg);
+}
+.surrounding-img .eat-img {
+  background-image: url(../img/eat/eat1.jpg);
+  background-position-x: 25%;
 }
 
 .about_bg_1 {
@@ -1406,24 +1461,11 @@ h3 {
     padding-top: 80px;
   }
 }
-
-.redirect_area {
-  display: flex;
-  justify-content: center;
-}
-
-.redirect_component {
+.offers_area .single_offers {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-
-.redirect_parent {
-  min-width: 380px;
-  margin-bottom: 30px
-}
-
 @media (max-width: 767px) {
   .offers_area .single_offers {
     margin-bottom: 30px;
@@ -2006,6 +2048,13 @@ h3 {
   background-image: url(../img/activity/activity1.jpg);
 }
 .activity_banner h3 {
+  text-shadow: 2px 2px #444;
+}
+
+.eat_banner {
+  background-image: url(../img/eat/eat2.jpg);
+}
+.eat_banner h3 {
   text-shadow: 2px 2px #444;
 }
 
