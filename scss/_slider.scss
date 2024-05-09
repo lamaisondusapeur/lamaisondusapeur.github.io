@@ -1,16 +1,24 @@
-.slider_bg_1{
-    background-image: url(../img/banner/banner1.jpeg);
+.slider-title-container {
+    position: relative;
+    top: -25%;
 }
-.slider_bg_2{
+
+.slider_bg_1{
     background-image: url(../img/banner/banner2.jpg);
     @media #{$mobile_device} {
         background-position-x: 50%;
      }
 }
-.slider_bg_3{
+.slider_bg_2{
     background-image: url(../img/banner/banner3.jpeg);
     @media #{$mobile_device} {
         background-position-x: 20%;
+     }
+}
+.slider_bg_3{
+    background-image: url(../img/banner/banner1.jpeg);
+    @media #{$mobile_device} {
+        background-position-x: 60%;
      }
 }
 .slider_area{

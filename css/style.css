@@ -812,25 +812,35 @@ h3 {
   padding: 0;
 }
 
-.slider_bg_1 {
-  background-image: url(../img/banner/banner1.jpeg);
+.slider-title-container {
+  position: relative;
+  top: -25%;
 }
 
-.slider_bg_2 {
+.slider_bg_1 {
   background-image: url(../img/banner/banner2.jpg);
 }
 @media (max-width: 767px) {
-  .slider_bg_2 {
+  .slider_bg_1 {
     background-position-x: 50%;
   }
 }
 
-.slider_bg_3 {
+.slider_bg_2 {
   background-image: url(../img/banner/banner3.jpeg);
 }
 @media (max-width: 767px) {
-  .slider_bg_3 {
+  .slider_bg_2 {
     background-position-x: 20%;
+  }
+}
+
+.slider_bg_3 {
+  background-image: url(../img/banner/banner1.jpeg);
+}
+@media (max-width: 767px) {
+  .slider_bg_3 {
+    background-position-x: 60%;
   }
 }
 
